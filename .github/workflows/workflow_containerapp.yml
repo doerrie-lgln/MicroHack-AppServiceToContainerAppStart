@@ -26,5 +26,5 @@ jobs:
     - name: Build and Push Image
       run: |
         az acr login --name microhackregistrydd --username ${{ secrets.ACR_USERNAME }} --password ${{ secrets.ACR_PASSWORD }} &&
-        docker build -t microhackregistry.azurecr.io/microhackapp:1 -f Dockerfile . &&
-        docker push microhackregistry.azurecr.io/microhackapp:1
+        docker build -t microhackregistrydd.azurecr.io/microhackapp:1 -f Dockerfile . &&
+        docker push microhackregistrydd.azurecr.io/microhackapp:1
